@@ -1,5 +1,7 @@
 # My Hackintosh OpenCore config for Gigabyte Z390 Aorus Pro WiFi 
 
+![image](https://github.com/archiexdex/Hackintosh/blob/master/imgs/BigSur11.1.png)
+
 ## Hardware Config
 
 - Gigabyte：Gigabyte Z390 Aorus Pro WiFi
@@ -9,6 +11,8 @@
 - Memory：Kingston 8G DDR4-3466 HyperX FURY x2
 - Storage：Adata XPG SX8200Pro 512G
 - Power：SUPER FLOWER LEADEX 650W
+
+![image](https://github.com/archiexdex/Hackintosh/blob/master/imgs/Hardware.png)
 
 ## BIOS Setting (IMPORTANT)!!!
 
@@ -35,13 +39,14 @@
 * Power → RC6 (Render Standby) -> Disabled
 
 I don't find CFG Lock on the BIOS setting, so I set Kernel → Quirks → `AppleXcpmCfgLock` → true
+
 @[***cheneyveron***](https://github.com/cheneyveron) does something for CFG Lock on Gigabyte Motherboard, but I don't understand how to do.
 
 ## Software info.
 
 - OS：macOS Big Sur 11.1
 - OpenCore version：0.6.4
-<!-- - UHD630：Work。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id` → `0300983E`。 -->
+- UHD630：Work。DeviceProperties -> Add -> `PciRoot(0x0)/Pci(0x2,0x0)` -> `AAPL,ig-platform-id` → `0300983E`
 - RX570：Work
 - Audio：Work
 - USB：Work
