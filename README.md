@@ -17,26 +17,38 @@
 ## BIOS Setting (IMPORTANT)!!!
 
 * Save & Exit → Load Optimized Defaults
-* BIOS → Fast Boot → Disabled
-* BIOS → CSM Support → Disabled
-* BIOS → Secure Boot → Secure Boot Enable -> Disabled
-* BIOS → Windows 8/10 Features → Windows 8/10
-* Peripherals → Intel Platform Trust Technology (PTT) → Disable
-* Peripherals → Software Guard Extensions (SGX) → Disable
-* Peripherals → Trusted Computing → Security Device Support →  Disable
-* Peripherals → USB Configuration → Legacy USB Support →  Enabled
-* Peripherals → USB Configuration → XHCI Hand-off →  Enabled
-* Peripherals → Network Stack Configuration → Network Stack →  Disabled
-* Peripherals → SATA And RST Configuration → SATA Mode Selection →  AHCI
-* Chipset → Vt-d → Disabled
-* Chipset → Internal Graphics → Enabled
-* Chipset → DVMT Pre-Allocated → 64M
-* Chipset → DVMT Total Gfx Mem → MAX 
-* Chipset → Audio Controller → Enabled
-* Chipset → Above 4G Decoding → Enabled
-* Power → Platform Power Management → Disabled
-* Power → ErP → Disabled
-* Power → RC6 (Render Standby) -> Disabled
+
+### BIOS
+
+* Fast Boot → Disabled
+* CSM Support → Disabled
+* Secure Boot → Secure Boot Enable -> Disabled
+* Windows 8/10 Features → Windows 8/10
+
+### Peripherals
+
+* Intel Platform Trust Technology (PTT) → Disable
+* Software Guard Extensions (SGX) → Disable
+* Trusted Computing → Security Device Support →  Disable
+* USB Configuration → Legacy USB Support →  Enabled
+* USB Configuration → XHCI Hand-off →  Enabled
+* Network Stack Configuration → Network Stack →  Disabled
+* SATA And RST Configuration → SATA Mode Selection →  AHCI
+
+### Chipset
+
+* Vt-d → Disabled
+* Internal Graphics → Enabled
+* DVMT Pre-Allocated → 64M
+* DVMT Total Gfx Mem → MAX 
+* Audio Controller → Enabled
+* Above 4G Decoding → Enabled
+
+### Power
+
+* Platform Power Management → Disabled
+* ErP → Disabled
+* RC6 (Render Standby) -> Disabled
 
 I don't find CFG Lock on the BIOS setting, so I set Kernel → Quirks → `AppleXcpmCfgLock` → true
 
